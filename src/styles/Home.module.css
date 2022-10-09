@@ -1,0 +1,11 @@
+.container {
+  padding: 0 2rem;
+  max-width: 1440px;
+  margin: 70px auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
