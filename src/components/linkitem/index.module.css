@@ -1,0 +1,17 @@
+.linkItem {
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.linkItem:hover,
+.linkItem:focus{
+    background-color: rgb(138, 147, 159);
+}

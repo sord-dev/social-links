@@ -4,9 +4,6 @@ import styles from "../styles/Home.module.css";
 import data from "../../data.json";
 import { UserDetails, LinkList } from "../components";
 
-// selecting me from the json file.
-// (yeah i'm looping through all the users, but theres only one so it doesn't matter right now)
-
 export default function Home({ me }) {
   return (
     <div className={styles.container}>
@@ -25,6 +22,8 @@ export default function Home({ me }) {
 }
 
 export async function getStaticProps(context) {
+  // selecting me from the json file.
+  // (yeah i'm looping through all the users, but theres only one so it doesn't matter right now)
   const users = data.users;
   const me = users.filter((user) => user.uid === "4761")[0];
 
