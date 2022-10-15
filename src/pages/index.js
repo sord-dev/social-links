@@ -21,11 +21,11 @@ export default function Home({ me }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps(ctx) {
   // selecting me from the json file.
-  // (yeah i'm looping through all the users, but theres only one so it doesn't matter right now)
+  // (yeah, i'm looping through all the users. But theres only one so it doesn't matter right now)
   const users = data.users;
-  const me = users.filter((user) => user.uid === "4761")[0];
+  const me = users.filter((user) => user.uid === "9695")[0];
 
   return {
     props: { me },

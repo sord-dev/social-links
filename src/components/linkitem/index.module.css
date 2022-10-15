@@ -1,17 +1,32 @@
 .linkItem {
-    width: 50%;
+    width: 60%;
     text-align: center;
-    height: 50px;
-    border: 1px solid black;
+    height: 70px;
+    border: 1px solid transparent;
+    color: #454751;
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #bccaff;
+    border-radius: 5px;
 }
 
 
 .linkItem:hover,
 .linkItem:focus{
-    background-color: rgb(138, 147, 159);
+    background-color: #7D88B3;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #e8ebf5;
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .linkItem {
+        width: 90%;
+    }
+    
+
 }

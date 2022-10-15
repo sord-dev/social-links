@@ -2,10 +2,13 @@
   padding: 0 2rem;
   max-width: 1440px;
   margin: 70px auto;
+  z-index: 10;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
 }
+
