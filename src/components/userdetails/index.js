@@ -2,23 +2,43 @@ import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 
-export function UserDetails({ me }) {
-  const { uid, name, description, thumbnail } = me;
-  const copyNameToKeyboard = (name, uid) =>
-    navigator.clipboard.writeText(`${name}#${uid}`);
+import Tippy from "@tippyjs/react";
+import { copyNameToKeyboard } from "../../utils";
 
+export function UserDetails({ me = {} }) {
+  if(Object.keys(me).length < 1) return <div>loading...</div>
+  const { uid, name, description, thumbnail } = me;
   return (
     <div className={styles.userDetails}>
-      <Image src={thumbnail} width={125} height={125} alt={`${name}'s profile picture`} />
-      <div
-        className={styles.nameDisplay}
-        onClick={() => copyNameToKeyboard(name, uid)}
-      >
-        <p className={styles.tag}>{`${name}#${uid}`}</p>
-      </div>
+      <Image
+        src={thumbnail}
+        width={140}
+        height={140}
+        alt={`${name}'s profile picture`}
+      />
+      <NameDisplay {...{ name, uid }} />
       <div className={styles.description}>
         <p>{description}</p>
       </div>
+    </div>
+  );
+}
+
+function NameDisplay({ name, uid }) {
+  return (
+    <div
+      className={styles.nameDisplay}
+      onClick={() => copyNameToKeyboard(name, uid)}
+    >
+      <Tippy
+        trigger="click"
+        placement="bottom"
+        content={
+          <div className={styles.tooltip}>Discord copied to clipboard!</div>
+        }
+      >
+        <p className={styles.tag}>{`${name}#${uid}`}</p>
+      </Tippy>
     </div>
   );
 }

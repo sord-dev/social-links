@@ -11,9 +11,8 @@
 }
 
 .userDetails img {
- border-radius: 50%;
+  border-radius: 50%;
 }
-
 
 /* name and tag styles */
 .nameDisplay {
@@ -31,22 +30,33 @@
 }
 
 .tag:hover {
-  color: #bca2c9;
+  color: #eaedf5;
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 .tag:active {
-  color: #bca2c9;
   font-size: 1.1em;
-  scale: .87;
+  scale: 0.87;
+}
+
+/* tag tooltip styles */
+
+.tooltip {
+  background-color: #bccafff5;
+  padding: 5px; 
+  border-radius: 5px;
+  color: #1c1c1e;
 }
 
 /* description styles */
 
 .description {
   font-weight: 500;
+  max-width: 500px;
+  text-align: center;
 }
 
-.description p{
+.description p {
   margin: 0;
 }
