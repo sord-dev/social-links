@@ -6,7 +6,7 @@ export function LinkList({ links = [] }) {
   return (
     <div className={styles.linkList}>
       {links.map((link) => (
-        <LinkItem key={link.href} title={link.title} href={link.href} />
+        <LinkItem key={link.href} title={link.title} description={link.description} href={link.href} />
       ))}
     </div>
   );

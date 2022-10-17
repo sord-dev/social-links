@@ -26,8 +26,9 @@ export default function Home({ me }) {
 export async function getStaticProps(ctx) {
   // selecting me from the json file.
   // (yeah, i'm looping through all the users. But theres only one so it doesn't matter right now)
-  const users = data.users;
-  const me = users.filter((user) => user.uid === "4761")[0];
+  const {users} = data;
+
+  const me = users[0];
 
   return {
     props: { me },
