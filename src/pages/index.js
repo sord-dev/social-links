@@ -8,8 +8,8 @@ export default function Home({ me }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Sordid</title>
-        <meta name="description" content="sordid is making a link page..." />
+        <title>{me.name}</title>
+        <meta name="description" content="stef is making a link page..." />
         <link rel="icon" href="/test.svg" />
       </Head>
 
@@ -25,9 +25,7 @@ export default function Home({ me }) {
 
 export async function getStaticProps(ctx) {
   // selecting me from the json file.
-  // (yeah, i'm looping through all the users. But theres only one so it doesn't matter right now)
   const {users} = data;
-
   const me = users[0];
 
   return {
