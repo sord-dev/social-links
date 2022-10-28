@@ -8,8 +8,8 @@ export default function Home({ me }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{me.name}</title>
-        <meta name="description" content="stef is making a link page..." />
+        <title>Social Links</title>
+        <meta name="description" content="an embelishment on linktree backgrounds..." />
         <link rel="icon" href="/test.svg" />
       </Head>
 
