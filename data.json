@@ -1,28 +1,44 @@
 {
-  "users": [
-    {
-      "uid": "4709",
-      "name": "stef",
-      "description": "A little sacrifice goes a long way.",
-      "thumbnail": "/stef.png",
-      "links": [
-        {
-          "href": "https://work-portfolio-delta.vercel.app/",
-          "title": "Web Development ^^",
-          "description": "I make websites in my spare time."
-        },
-        {
-          "href": "https://www.youtube.com/c/devmentorlive",
-          "title": "The Best Coding Tutorials On YT",
-          "description": "Learn NextJS, functional programming, best practices and more."
-        },
-       
-        {
-          "href": "https://github.com/sord-dev",
-          "title": "Github",
-          "description": "Check out my projects on github."
-        }
-      ]
-    }
-  ]
+  "user": {
+    "uid": "4709",
+    "name": "stef",
+    "description": "A little sacrifice goes a long way.",
+    "thumbnail": "/stef.png",
+    "links": [
+      {
+        "href": "https://work-portfolio-delta.vercel.app/",
+        "title": "Web Development ^^",
+        "description": "I make websites in my spare time."
+      },
+      {
+        "href": "https://www.youtube.com/c/devmentorlive",
+        "title": "The Best Coding Tutorials On YT",
+        "description": "Learn NextJS, functional programming, best practices and more."
+      },
+
+      {
+        "href": "https://github.com/sord-dev",
+        "title": "Github",
+        "description": "Check out my projects on github."
+      }
+    ]
+  },
+  "social": {
+    "uid": "4709",
+    "name": "stef",
+    "description": "A little sacrifice goes a long way.",
+    "thumbnail": "/stef.png",
+    "links": [
+      {
+        "href": "https://open.spotify.com/playlist/6ck3rYLGEOELZjQnUE0srv?si=790caf3c41744392",
+        "title": "Lofi, Coffee and Code"
+      },
+
+      {
+        "href": "https://github.com/sord-dev",
+        "title": "Github",
+        "description": "Check out my projects on github."
+      }
+    ]
+  }
 }

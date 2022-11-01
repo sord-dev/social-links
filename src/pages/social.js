@@ -9,16 +9,18 @@ export default function Home({ me }) {
     <div className={styles.container}>
       <Head>
         <title>Social Links</title>
-        <meta name="description" content="an embelishment on linktree backgrounds..." />
+        <meta
+          name="description"
+          content="an embelishment on linktree backgrounds..."
+        />
         <link rel="icon" href="/test.svg" />
       </Head>
-
       <ParticleBackground>
-      <FadeInAnimation>
-        <div className={styles.main}>
-          <UserDetails {...{ me }} />
-          <LinkList links={me.links} />
-        </div>
+        <FadeInAnimation>
+          <div className={styles.main}>
+            <UserDetails {...{ me }} />
+            <LinkList links={me.links} />
+          </div>
         </FadeInAnimation>
       </ParticleBackground>
     </div>
@@ -27,8 +29,8 @@ export default function Home({ me }) {
 
 export async function getStaticProps(ctx) {
   // selecting me from the json file.
-  const {user} = data;
-  const me = user;
+  const { social } = data;
+  const me = social;
 
   return {
     props: { me },

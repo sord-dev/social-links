@@ -31,13 +31,7 @@
 
 .tag:hover {
   color: #eaedf5;
-  font-size: 1.1em;
   cursor: pointer;
-}
-
-.tag:active {
-  font-size: 1.1em;
-  scale: 0.87;
 }
 
 /* tag tooltip styles */
