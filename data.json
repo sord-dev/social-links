@@ -6,6 +6,10 @@
     "thumbnail": "/stef.png",
     "links": [
       {
+        "href": "https://freestuff.dev/",
+        "title": "Free Developer Stuffs"
+      },
+      {
         "href": "https://work-portfolio-delta.vercel.app/",
         "title": "Web Development ^^",
         "description": "I make websites in my spare time."
@@ -15,7 +19,6 @@
         "title": "The Best Coding Tutorials On YT",
         "description": "Learn NextJS, functional programming, best practices and more."
       },
-
       {
         "href": "https://github.com/sord-dev",
         "title": "Github",
@@ -33,7 +36,6 @@
         "href": "https://open.spotify.com/playlist/6ck3rYLGEOELZjQnUE0srv?si=790caf3c41744392",
         "title": "Lofi, Coffee and Code"
       },
-
       {
         "href": "https://github.com/sord-dev",
         "title": "Github",

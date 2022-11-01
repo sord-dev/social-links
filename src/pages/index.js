@@ -10,7 +10,7 @@ export default function Home({ me }) {
       <Head>
         <title>Social Links</title>
         <meta name="description" content="an embelishment on linktree backgrounds..." />
-        <link rel="icon" href="/test.svg" />
+        <link rel="icon" href="/bitmoji-wink.png" />
       </Head>
 
       <ParticleBackground>
