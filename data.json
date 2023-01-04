@@ -37,16 +37,14 @@
         "title": "🎵 Tunes"
       },
       {
-        "href": "https://github.com/sord-dev",
-        "title": "Github"
-      },
-      {
         "href": "https://www.instagram.com/sxrdidd/",
-        "title": "Instagram"
+        "title": "Instagram",
+        "description": "HMU for deals on online 💸 making courses"
       },
       {
         "href": "https://twitter.com/donkeykongfana2",
-        "title": "Twitter"
+        "title": "Twitter",
+        "description": "From the good old gamer days..."
       }
     ]
   }
