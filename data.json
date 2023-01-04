@@ -33,13 +33,20 @@
     "thumbnail": "/stef.png",
     "links": [
       {
-        "href": "https://open.spotify.com/playlist/4dbPmBgRZRTy44RWdaaVuv?si=ea3374097fdf4eb9",
-        "title": "Tunes, Coffee and Code"
+        "href": "https://www.youtube.com/watch?v=gp3Aq_dBx0o",
+        "title": "🎵 Tunes"
       },
       {
         "href": "https://github.com/sord-dev",
-        "title": "Github",
-        "description": "Check out my projects on github."
+        "title": "Github"
+      },
+      {
+        "href": "https://www.instagram.com/sxrdidd/",
+        "title": "Instagram"
+      },
+      {
+        "href": "https://twitter.com/donkeykongfana2",
+        "title": "Twitter"
       }
     ]
   }
