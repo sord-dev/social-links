@@ -1,36 +1,31 @@
-import Head from "next/head";
+import { UserDetails, LinkGrid, ParticleBackground, SEO } from "../components";
 import styles from "../styles/Home.module.css";
 
-import data from "../../data.json";
-import { UserDetails, LinkList, ParticleBackground, FadeInAnimation } from "../components";
+const links = [
+  { src: "https://github.com/sord-dev", tag: "Github" },
+  { src: "https://linkedin.com/in/stefansyrett/", tag: "LinkedIn" },
+  { src: "mailto:stefansyrett17@gmail.com", tag: "Email" },
+  { src: "https://linkedin.com/in/stefansyrett/", tag: "CV" },
+  { src: "http://www.patience-is-a-virtue.org", tag: "Discord" },
+];
 
-export default function Home({ me }) {
+const SEOConfig = {
+  title: "Stef | JS Developer",
+  descrption: "My Developer portfolio.",
+  icon: "/bitmoji-wink.png",
+};
+
+export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Social Links</title>
-        <meta name="description" content="an embelishment on linktree backgrounds..." />
-        <link rel="icon" href="/bitmoji-wink.png" />
-      </Head>
-
+      <SEO {...SEOConfig} />
       <ParticleBackground>
-      <FadeInAnimation>
         <div className={styles.main}>
-          <UserDetails {...{ me }} />
-          <LinkList links={me.links} />
+          <UserDetails />
+          {/* <Carousel3D items={...{ projects }} /> */}
+          <LinkGrid {...{ links }} />
         </div>
-        </FadeInAnimation>
       </ParticleBackground>
     </div>
   );
-}
-
-export async function getStaticProps(ctx) {
-  // selecting me from the json file.
-  const {user} = data;
-  const me = user;
-
-  return {
-    props: { me },
-  };
 }

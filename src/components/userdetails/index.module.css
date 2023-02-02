@@ -3,52 +3,51 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  text-align: center;
   margin-bottom: 20px;
-}
-
-.userDetails > * {
-  margin: 0;
+  cursor: default;
 }
 
 .userDetails img {
+  border: 2px solid #8140ff;
   border-radius: 50%;
+  box-shadow: 2px 3px 3px 0px #9157ff40;
+}
+/* title and subtitle styles */
+
+.purp {
+  color: #8140ff;
+  transition: color 300ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* name and tag styles */
-.nameDisplay {
-  display: flex;
-  align-items: center;
+.purp:hover {
+  color: black;
+}
+
+.name {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 32px;
   height: 30px;
+  margin: 6px 0;
+  opacity: 0.9;
 }
 
-.tag {
+.details p {
+  font-weight: 200;
+  font-size: 18px;
   margin: 0;
-  padding: 0;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.tag:hover {
-  color: #eaedf5;
-  cursor: pointer;
-}
-
-/* tag tooltip styles */
-
-.tooltip {
-  background-color: #bccafff5;
-  padding: 5px; 
-  border-radius: 5px;
-  color: #1c1c1e;
+  letter-spacing: 2%;
 }
 
 /* description styles */
 
 .description {
   font-weight: 500;
-  max-width: 500px;
-  text-align: center;
+  max-width: 380px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 130%;
+  opacity: 0.8;
 }
 
 .description p {

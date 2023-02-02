@@ -1,50 +1,33 @@
 import React from "react";
 import styles from "./index.module.css";
-import Image from "next/image";
 
-import Tippy from "@tippyjs/react";
-import { copyNameToKeyboard } from "../../utils";
+import { HoverAnimation } from "../animations";
 
-import { HoverBounceAnimation, HoverAnimation } from "../animations";
-
-export function UserDetails({ me = {} }) {
-  if (Object.keys(me).length < 1) return <div>loading...</div>;
-  const { uid, name, description, thumbnail } = me;
+export function UserDetails() {
   return (
     <div className={styles.userDetails}>
-    <HoverAnimation>
-      <Image
-        src={thumbnail}
-        width={140}
-        height={140}
-        alt={`${name}'s profile picture`}
-      />
+      <HoverAnimation>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={"/stef.png"}
+          width={120}
+          height={120}
+          alt={`Stefan's profile picture`}
+          draggable={"false"}
+        />
       </HoverAnimation>
-      <NameDisplay {...{ name, uid }} />
-      <div className={styles.description}>
-        <p>{description}</p>
+      <div className={styles.details}>
+        <h1 className={styles.name}>
+          <span className={styles.purp}>Stef</span>an Syrett
+        </h1>
+        <p>Javascript Developer</p>
       </div>
-    </div>
-  );
-}
 
-function NameDisplay({ name, uid }) {
-  return (
-    <HoverBounceAnimation>
-      <div
-        className={styles.nameDisplay}
-        onClick={() => copyNameToKeyboard(name, uid)}
-      >
-        <Tippy
-          trigger="click"
-          placement="bottom"
-          content={
-            <div className={styles.tooltip}>Discord copied to clipboard!</div>
-          }
-        >
-          <p className={styles.tag}>{`${name}#${uid}`}</p>
-        </Tippy>
-      </div>
-    </HoverBounceAnimation>
+      <p className={styles.description}>
+        Just a developer/designer trying to provide value c: <br /> I enjoy
+        solving business and specific problems, and strive to become better at
+        doing so continually.
+      </p>
+    </div>
   );
 }
