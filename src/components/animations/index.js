@@ -25,15 +25,15 @@ export function HoverBounceAnimation({ children }) {
   );
 }
 
-export function HoverAnimation({ children }) {
-  // createArr(2, 1, 5) == [5, 1].length = 2
-  // createArr(3, 1, 2) == [2, 1, 2].length = 3
+export function HoverAnimation({ children, float }) {
   const createArr = (length, low, high) =>
     [...new Array(length)].map((val, idx) => (idx % 2 == 0 ? high : low));
+
+    const y = float ? createArr(...float) : createArr(3, 1, 2)
   return (
     <motion.div
       animate={{
-        y: createArr(3, 1, 2),
+        y,
       }}
       transition={{ repeat: Infinity, repeatDelay: 0 }}
     >

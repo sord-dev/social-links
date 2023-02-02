@@ -8,18 +8,17 @@
   cursor: default;
 }
 
-
 .userDetails img {
-  border: 2px solid #8140FF;
+  border: 2px solid #8140ff;
   border-radius: 50%;
-  box-shadow: 2px 3px 3px 0px #9157FF40;
+  box-shadow: 2px 3px 3px 0px #9157ff40;
 }
 /* title and subtitle styles */
 
 .purp {
-  color: #8140FF;
+  color: #8140ff;
   transition: color 300ms cubic-bezier(0.19, 1, 0.22, 1);
-} 
+}
 
 .purp:hover {
   color: black;
@@ -45,8 +44,9 @@
 .description {
   font-weight: 500;
   max-width: 380px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
+  line-height: 130%;
   opacity: 0.8;
 }
 

@@ -1,7 +1,5 @@
-import styles from "../styles/Home.module.css";
-
-import data from "../../data.json";
 import { UserDetails, LinkGrid, ParticleBackground, SEO } from "../components";
+import styles from "../styles/Home.module.css";
 
 const links = [
   { src: "https://github.com/sord-dev", tag: "Github" },
@@ -12,8 +10,8 @@ const links = [
 ];
 
 const SEOConfig = {
-  title: "Social Links",
-  descrption: "an embelishment on linktree backgrounds...",
+  title: "Stef | JS Developer",
+  descrption: "My Developer portfolio.",
   icon: "/bitmoji-wink.png",
 };
 
