@@ -1,4 +1,10 @@
-import { UserDetails, LinkGrid, ParticleBackground, SEO } from "../components";
+import {
+  UserDetails,
+  LinkGrid,
+  ParticleBackground,
+  SEO,
+  FadeInAnimation,
+} from "../components";
 import styles from "../styles/Home.module.css";
 
 const links = [
@@ -17,15 +23,17 @@ const SEOConfig = {
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <SEO {...SEOConfig} />
-      <ParticleBackground>
-        <div className={styles.main}>
-          <UserDetails />
-          {/* <Carousel3D items={...{ projects }} /> */}
-          <LinkGrid {...{ links }} />
+    <ParticleBackground>
+      <FadeInAnimation>
+        <div className={styles.container}>
+          <SEO {...SEOConfig} />
+          <div className={styles.main}>
+            <UserDetails />
+            {/* <Carousel3D items={...{ projects }} /> */}
+            <LinkGrid {...{ links }} />
+          </div>
         </div>
-      </ParticleBackground>
-    </div>
+      </FadeInAnimation>
+    </ParticleBackground>
   );
 }

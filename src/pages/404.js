@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "../styles/Error.module.css";
 
-import { HoverAnimation } from "../components/animations";
+import { FadeInAnimation, HoverAnimation } from "../components/animations";
+import { ParticleBackground } from "../components";
 import { useRouter } from "next/router";
 
 function Error() {
@@ -10,18 +11,22 @@ function Error() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       router.push("/");
-    }, 2000);
+    }, 2500);
 
     return () => clearTimeout(timeout);
   }, []);
 
   return (
-    <div className={styles.error}>
-      <HoverAnimation float={[2, 1, 4]}>
-        <h1>Where are you trying to get to?</h1>
-        <p>Redirecting you in 3 seconds...</p>
-      </HoverAnimation>
-    </div>
+    <ParticleBackground>
+      <FadeInAnimation>
+        <div className={styles.error}>
+          <HoverAnimation float={[2, 1, 4]}>
+            <h1>Where are you trying to get to?</h1>
+            <p>Redirecting you in 3 seconds...</p>
+          </HoverAnimation>
+        </div>
+      </FadeInAnimation>
+    </ParticleBackground>
   );
 }
 
