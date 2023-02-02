@@ -1,20 +1,24 @@
-import styles from './index.module.css'
+import styles from "./index.module.css";
 
-export function LinkGrid({ links }) {
-  const testArr = [{src: 'https://github.com/sord-dev', tag: 'Github'}, {src: 'https://linkedin.com/in/stefansyrett/', tag: 'LinkedIn'}];
+export function LinkGrid({ links = [] }) {
   return (
-   <div className={styles.grid}>
-    {testArr.map(link => (
-      <LinkItem key={link.tag} {...{ link }} />
-    ))}
-   </div>
+    <div className={styles.grid}>
+      {links.map((link) => (
+        <LinkItem className={styles.item} key={link.tag} {...{ link }} />
+      ))}
+    </div>
   );
 }
 
 function LinkItem({ link }) {
   return (
-    <a className={styles.item} href={link.src} target="_blank" rel="noopener noreferrer">
-    {link.tag}
+    <a
+      className={styles.item}
+      href={link.src}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {link.tag}
     </a>
-  )
+  );
 }

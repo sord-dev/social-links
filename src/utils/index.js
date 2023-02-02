@@ -1,2 +1,2 @@
-export const copyNameToKeyboard = (name, uid) =>
-navigator.clipboard.writeText(`${name}#${uid}`);
+export const copyNameToKeyboard = () =>
+navigator.clipboard.writeText(`stef#4709`);
