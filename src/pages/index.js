@@ -50,8 +50,8 @@ export default function Home() {
   return (
     <ParticleBackground>
       <FadeInAnimation>
-        <div className={styles.container}>
           <SEO {...SEOConfig} />
+        <div className={styles.container}>
           <div className={styles.main}>
             <UserDetails />
             <ProjectCarousel {...{ projects }} />
