@@ -1,0 +1,39 @@
+.modalBg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #21143c5a;
+    padding: 1em;
+    transition: 500ms;
+}
+
+.modal {
+    height: 550px;
+    width: 750px;
+    background-color: #EBEFFF;
+    border-radius: 6px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 220px;
+}
+
+.thumbnail img {
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+}
+
+.content {
+    padding: 1em;
+}
