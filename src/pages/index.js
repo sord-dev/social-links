@@ -53,8 +53,9 @@ const projects = [
 ];
 
 const SEOConfig = {
-  title: "Stef | JS Developer",
-  descrption: "My Developer portfolio.",
+  title: "Stefan Syrett | JS Developer",
+  description:
+    "Just a developer/designer trying to provide value! I enjoy solving business and specific problems, and strive to become better at doing so continually.",
   icon: "/bitmoji-wink.png",
 };
 
