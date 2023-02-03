@@ -15,6 +15,14 @@
 
   overflow: hidden;
   padding: 6px 1em;
+  border-radius: 6px;
+}
+
+.card h2 {
+  margin: 0;
+}
+.card p {
+  font-size: 12px;
 }
 
 .card.left {
@@ -37,7 +45,17 @@
 @media screen and (max-width: 750px) {
   .card {
     width: 200px;
-    height: 200px;
+    height: 210px;
+    text-align: center;
+  }
+
+  .card h1 {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+  .card span {
+    font-size: 0.8em;
   }
 
   .carousel {
@@ -48,7 +66,7 @@
 @media screen and (max-width: 450px) {
   .card {
     width: 180px;
-    height: 200px;
+    height: 220px;
   }
 
   .carousel {
