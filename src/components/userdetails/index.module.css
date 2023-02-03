@@ -4,7 +4,6 @@
   align-items: center;
   gap: 5px;
   text-align: center;
-  margin-bottom: 20px;
   cursor: default;
 }
 
@@ -48,8 +47,15 @@
   font-weight: 400;
   line-height: 130%;
   opacity: 0.8;
+  margin: 5px 0;
 }
 
 .description p {
   margin: 0;
+}
+
+@media screen and (max-width: 375px) {
+  .description {
+    max-width: 350px;
+  }
 }
