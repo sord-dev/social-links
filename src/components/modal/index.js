@@ -3,10 +3,11 @@ import styles from "./index.module.css";
 
 import { useContext } from "react";
 import { ModalContext } from "../../utils/contexts/modalContext";
+import { LinkBtn } from "../btnlink";
 
 export function Modal({ modalCard }) {
   const { closeModal } = useContext(ModalContext);
-  const { tech, thumbnail, name, descriptioncode, websiteUrl } = modalCard;
+  const { tech, thumbnail, name, description, code, websiteUrl } = modalCard;
 
   return (
     <div className={styles.modalBg} onClick={() => closeModal()}>
@@ -19,6 +20,17 @@ export function Modal({ modalCard }) {
           <p>{tech}</p>
           <h2>{name}</h2>
           <p>{description}</p>
+
+          <div className={styles.actionGroup}>
+            <p className={styles.dismiss} onClick={() => closeModal()}>
+              Dismiss
+            </p>
+
+            <div className={styles.buttons}>
+              <LinkBtn tag={"Code"} href={code} />
+              <LinkBtn tag={"Website"} href={websiteUrl} primary />
+            </div>
+          </div>
         </div>
       </div>
     </div>

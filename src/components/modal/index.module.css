@@ -1,39 +1,61 @@
 .modalBg {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: #21143c5a;
-    padding: 1em;
-    transition: 500ms;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #21143c5a;
+  padding: 1em;
+  transition: 500ms;
 }
 
 .modal {
-    height: 550px;
-    width: 750px;
-    background-color: #EBEFFF;
-    border-radius: 6px;
+  height: 550px;
+  width: 750px;
+  background-color: #ebefff;
+  border-radius: 6px;
+  position: relative;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 220px;
+  width: 100%;
+  height: 220px;
 }
 
 .thumbnail img {
-    border-radius: 6px 6px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 220px;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
 }
 
 .content {
-    padding: 1em;
+  padding: 1em;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.dismiss {
+  cursor: pointer;
+  color: rgba(130, 67, 255, 0.694);
 }
