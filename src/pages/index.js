@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { ModalContext } from "../utils/contexts/modalContext";
 import {
   UserDetails,
   LinkGrid,
@@ -9,6 +7,8 @@ import {
   ProjectCarousel,
   Modal,
 } from "../components";
+import { useContext } from "react";
+import { ModalContext } from "../utils/contexts/modalContext";
 import styles from "../styles/Home.module.css";
 
 const links = [
@@ -27,8 +27,8 @@ const projects = [
     name: "High Value Books",
     description:
       "A repository with all the books I've seen recommended by successful people. With searching and recommendation capabilities.",
-      code: "https://github.com/sord-dev/adonislibrary",
-      websiteUrl: "https://adonislibrary.vercel.app"
+    code: "https://github.com/sord-dev/adonislibrary",
+    websiteUrl: "https://adonislibrary.vercel.app",
   },
   {
     id: "c740c8ee-a3bc-11ed-a8fc-0242ac120002",
@@ -37,8 +37,8 @@ const projects = [
     name: "Makeup Artist Portfolio",
     description:
       "Makeup Artist portfolio created for Freelance work, showcasing the makeup and photoshoots the client has done.",
-      code: "https://github.com/sord-dev/Ashleigh-Lavery",
-      websiteUrl: "https://ashleigh-lavery.vercel.app"
+    code: "https://github.com/sord-dev/Ashleigh-Lavery",
+    websiteUrl: "https://ashleigh-lavery.vercel.app",
   },
   {
     id: "c740cace-a3bc-11ed-a8fc-0242ac120002",
@@ -47,8 +47,8 @@ const projects = [
     name: "NextJS Blog",
     description:
       "Next,js SSR Markdown blog I created for more practice deisgning and implimenting some functionality with javascript.",
-      code: "https://github.com/sord-dev/nextjs-markdown-blog-ssr",
-      websiteUrl: "https://portfolio-update-lyart.vercel.app"
+    code: "https://github.com/sord-dev/nextjs-markdown-blog-ssr",
+    websiteUrl: "https://portfolio-update-lyart.vercel.app",
   },
 ];
 

@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import { useContext } from "react";
 import { ModalContext } from "../../utils/contexts/modalContext";
 import { LinkBtn } from "../btnlink";
+import Link from "next/link";
 
 export function Modal({ modalCard }) {
   const { closeModal } = useContext(ModalContext);
@@ -13,7 +14,10 @@ export function Modal({ modalCard }) {
     <div className={styles.modalBg} onClick={() => closeModal()}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <div className={styles.thumbnail}>
-          <img src={thumbnail} alt="banner image" draggable={false} />
+          <Link href={websiteUrl}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={thumbnail} alt="banner image" draggable={false} />
+          </Link>
         </div>
 
         <div className={styles.content}>
