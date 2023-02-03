@@ -1,8 +1,3 @@
-.carousel {
-  margin: 100px 0 150px 0;
-  position: relative;
-}
-
 .card {
   width: 310px;
   height: 130px;
@@ -58,20 +53,12 @@
   .card span {
     font-size: 0.8em;
   }
-
-  .carousel {
-    margin: 120px 0 200px 0;
-  }
 }
 
 @media screen and (max-width: 450px) {
   .card {
     width: 180px;
     height: 220px;
-  }
-
-  .carousel {
-    margin: 120px 0 200px 0;
   }
 
   .card.left {

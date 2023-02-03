@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
+import { useContext } from "react";
+import { ModalContext } from "../../utils/contexts/modalContext";
+import { CarouselCard } from "../carouselcard";
 
 export function ProjectCarousel({ projects = [] }) {
   const [activeCard, setActiveCard] = useState(0);
+  const { setModalCard } = useContext(ModalContext);
+
   if (!projects.length || projects.length < 3 || projects.length > 3) {
     return (
       <CarouselError message="ProjectCarousel error, not enough or too many elements" />
@@ -35,34 +40,11 @@ export function ProjectCarousel({ projects = [] }) {
           <CarouselCard
             key={project.id}
             index={i}
-            {...{ project, classname, setActiveCard }}
+            {...{ project, classname, setActiveCard, activeCard, setModalCard }}
           />
         );
       })}
     </div>
-  );
-}
-
-function CarouselCard({ project, setActiveCard = () => {}, classname, index }) {
-  const techArr = project.tech;
-  return (
-    <div onClick={() => setActiveCard(index)} className={classname}>
-      <CardTechList {...{ techArr }} />
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-    </div>
-  );
-}
-
-function CardTechList({ techArr = [] }) {
-  if (!techArr.length) return;
-  return (
-    <span>
-      {techArr.map((tag, i) => {
-        if (i === techArr.length - 1) return <>{tag}</>;
-        return <>{tag}, </>;
-      })}
-    </span>
   );
 }
 
