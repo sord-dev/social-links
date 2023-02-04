@@ -4,7 +4,7 @@
 }
 
 .card {
-  width: 310px;
+  width: 315px;
   height: 130px;
   background-color: #ebefff;
   position: absolute;
@@ -16,6 +16,7 @@
   padding: 6px 1em;
   border-radius: 6px;
   cursor: pointer;
+  border: 1px solid rgba(128, 128, 128, 0.138);
 }
 
 .card h2 {
@@ -40,9 +41,7 @@
 
 .card.active {
   z-index: 99;
-  scale: 1.07;
 }
-
 .dotGroup {
   display: flex;
   gap: 1em;
@@ -54,10 +53,18 @@
   cursor: pointer;
   border-radius: 50%;
   background-color: #ebefff;
-  transition: 500ms;
+  transition: 300ms;
+}
+
+.dot:hover {
+  background-color: #b088fec1;
 }
 
 .dot.active {
+  background-color: #8140ff;
+}
+
+.dot.active:hover {
   background-color: #8140ff;
 }
 
@@ -88,9 +95,9 @@
     height: 200px;
   }
 
-  .card p{
+  .card p {
     width: 160px;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .carousel {
