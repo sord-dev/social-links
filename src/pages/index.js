@@ -7,10 +7,9 @@ import {
   ProjectCarousel,
   Modal,
 } from "../components";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ModalContext } from "../utils/contexts/modalContext";
 import styles from "../styles/Home.module.css";
-import { useIncriment } from "../utils/hooks/useIncriment";
 
 const links = [
   { src: "https://github.com/sord-dev", tag: "Github" },

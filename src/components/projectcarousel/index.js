@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 export function ProjectCarousel({ projects = [] }) {
   const [activeCard, setActiveCard] = useState(0);
   const { setModalCard, modalActive } = useContext(ModalContext);
-  const { count, setCount } = useIncriment(4, projects.length - 1);
+  const { count, setCount } = useIncriment(5, projects.length - 1);
 
   // on each tick of the count, update the active card. unless the modal is active.
   useEffect(() => {

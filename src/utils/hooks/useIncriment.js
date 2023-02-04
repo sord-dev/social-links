@@ -10,9 +10,7 @@ export function useIncriment(n = 1, high = 10) {
     count >= high ? setCount(0) : setCount((prev) => prev + 1);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      incriment();
-    }, n * 1000);
+    const interval = setInterval(() => incriment(), n * 1000);
 
     return () => {
       clearInterval(interval);
