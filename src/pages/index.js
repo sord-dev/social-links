@@ -23,7 +23,7 @@ const projects = [
   {
     id: "c740bec6-a3bc-11ed-a8fc-0242ac120002",
     tech: "Nextjs, TypeScript, Google Books API",
-    thumbnail: "https://placeholder.com/assets/images/150x150-2-500x500.png",
+    thumbnail: "https://i.postimg.cc/gJ4npY3W/value-books.png",
     name: "High Value Books",
     description:
       "A repository with all the books I've seen recommended by successful people. With searching and recommendation capabilities.",
@@ -33,7 +33,7 @@ const projects = [
   {
     id: "c740c8ee-a3bc-11ed-a8fc-0242ac120002",
     tech: "Nextjs, JavaScript, framer-motion",
-    thumbnail: "https://placeholder.com/assets/images/150x150-2-500x500.png",
+    thumbnail: "https://i.postimg.cc/D0Zmytcb/makeup-portfolio.png",
     name: "Makeup Artist Portfolio",
     description:
       "Makeup Artist portfolio created for Freelance work, showcasing the makeup and photoshoots the client has done.",
@@ -43,7 +43,7 @@ const projects = [
   {
     id: "c740cace-a3bc-11ed-a8fc-0242ac120002",
     tech: "Nextjs, JavaScript, Design",
-    thumbnail: "https://placeholder.com/assets/images/150x150-2-500x500.png",
+    thumbnail: "https://i.postimg.cc/QtjHvB9m/freelance-blog.png",
     name: "NextJS Blog",
     description:
       "Next,js SSR Markdown blog I created for more practice deisgning and implimenting some functionality with javascript.",

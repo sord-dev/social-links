@@ -27,15 +27,16 @@
   width: 100%;
   height: 220px;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.053);
+  position: relative;
 }
 
 .thumbnail img {
   border-radius: 6px 6px 0 0;
-  object-fit: cover;
-  width: 100%;
-  height: 220px;
   transition: 500ms;
   cursor: pointer;
+  object-fit: contain;
+  object-fit: cover;
 }
 
 .thumbnail img:hover {
