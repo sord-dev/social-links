@@ -7,9 +7,10 @@ import {
   ProjectCarousel,
   Modal,
 } from "../components";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ModalContext } from "../utils/contexts/modalContext";
 import styles from "../styles/Home.module.css";
+import { useIncriment } from "../utils/hooks/useIncriment";
 
 const links = [
   { src: "https://github.com/sord-dev", tag: "Github" },
@@ -53,7 +54,7 @@ const projects = [
 ];
 
 const SEOConfig = {
-  title: "Stefan Syrett | JS Developer",
+  title: "Stefan Syrett | ReactJs Developer",
   description:
     "Just a developer/designer trying to provide value! I enjoy solving business and specific problems, and strive to become better at doing so continually.",
   icon: "/bitmoji-wink.png",
@@ -61,6 +62,7 @@ const SEOConfig = {
 
 export default function Home() {
   const { modalActive, modalCard } = useContext(ModalContext);
+
   return (
     <ParticleBackground>
       <FadeInAnimation>

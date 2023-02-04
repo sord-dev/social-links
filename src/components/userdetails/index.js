@@ -20,7 +20,7 @@ export function UserDetails() {
         <h1 className={styles.name}>
           <span className={styles.purp}>Stef</span>an Syrett
         </h1>
-        <p>Javascript Developer</p>
+        <p>JavaScript Developer</p>
       </div>
 
       <p className={styles.description}>
