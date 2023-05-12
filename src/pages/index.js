@@ -43,7 +43,7 @@ const projects = [
   {
     id: "c740cace-a3bc-11ed-a8fc-0242ac120002",
     tech: "React, JavaScript, Design, OpenAI, Team Project",
-    thumbnail: "https://user-images.githubusercontent.com/75338985/238082082-4a8c6c35-3953-41d2-b80e-e4088328779e.png",
+    thumbnail: "https://i.ibb.co/5hDg51t/sai-dashboard.png",
     name: "SerenityAI",
     description:
       "A mental health application catered towards people who struggle with accountability and people who just want to hear a second opinion from a guide/therapist-like AI.",
