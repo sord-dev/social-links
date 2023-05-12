@@ -15,7 +15,7 @@ const links = [
   { src: "https://github.com/sord-dev", tag: "Github" },
   { src: "https://linkedin.com/in/stefansyrett/", tag: "LinkedIn" },
   { src: "mailto:stefansyrett17@gmail.com", tag: "Email" },
-  { src: "https://linkedin.com/in/stefansyrett/", tag: "CV" },
+  { src: "https://docs.google.com/document/d/1YgO4AhYtWiec13T5Vxv4zgl8o1S-_MzFJfERLmmYk0Q/edit?usp=sharing", tag: "CV" },
   { src: "http://www.patience-is-a-virtue.org", tag: "Discord" },
 ];
 
