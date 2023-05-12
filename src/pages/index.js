@@ -42,13 +42,13 @@ const projects = [
   },
   {
     id: "c740cace-a3bc-11ed-a8fc-0242ac120002",
-    tech: "Nextjs, JavaScript, Design",
-    thumbnail: "https://i.postimg.cc/QtjHvB9m/freelance-blog.png",
-    name: "NextJS Blog",
+    tech: "React, JavaScript, Design, OpenAI, Team Project",
+    thumbnail: "https://user-images.githubusercontent.com/75338985/238080720-743d33f7-8914-462f-91d4-1612d18203cd.png",
+    name: "SerenityAI",
     description:
-      "Next,js SSR Markdown blog I created for more practice deisgning and implimenting some functionality with javascript.",
-    code: "https://github.com/sord-dev/nextjs-markdown-blog-ssr",
-    websiteUrl: "https://portfolio-update-lyart.vercel.app",
+      "A mental health application catered towards people who struggle with accountability and people who just want to hear a second opinion from a guide/therapist-like AI.",
+    code: "https://github.com/sord-dev/mental-health-server",
+    websiteUrl: "https://serenity-ai.netlify.app/authenticate/register",
   },
 ];
 

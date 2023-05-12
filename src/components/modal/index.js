@@ -4,20 +4,25 @@ import styles from "./index.module.css";
 import { useContext } from "react";
 import { ModalContext } from "../../utils/contexts/modalContext";
 import { LinkBtn } from "../btnlink";
-import Link from "next/link";
 import Image from "next/image";
 
-export function Modal({ modalCard }) {
+const defaultCard = {
+  tech: "Modal Error",
+  thumbnail: "https://via.placeholder.com/300",
+  name: "",
+  description: "",
+  code: "",
+  webkitURL: "",
+};
+
+export function Modal({ modalCard = defaultCard }) {
   const { closeModal } = useContext(ModalContext);
   const { tech, thumbnail, name, description, code, websiteUrl } = modalCard;
 
   return (
     <div className={styles.modalBg} onClick={() => closeModal()}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-        <div
-          className={styles.thumbnail}
-          position="relative"
-        >
+        <div className={styles.thumbnail} position="relative">
           <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
             <Image
               loading="lazy"

@@ -28,7 +28,7 @@
 }
 
 .card.left {
-  transform: translateX(-125%);
+  transform: translateX(-120%);
   opacity: 0.8;
   scale: 0.8;
 }
