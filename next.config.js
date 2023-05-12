@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["placeholder.com", "i.postimg.cc"],
+    domains: ["placeholder.com", "i.postimg.cc", "i.ibb.co"],
   },
   async redirects() {
     return [
