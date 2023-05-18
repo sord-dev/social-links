@@ -17,10 +17,10 @@
   "projects": [
     {
       "id": "c740cace-a3bc-11ed-a8fc-0242ac120002",
-      "tech": "React, JavaScript, OpenAI API, Team Project",
+      "tech": "React, JavaScript, OpenAI API, Colab",
       "thumbnail": "https://i.ibb.co/Fz5tq4L/sai-thumbnail.png",
       "name": "SerenityAI",
-      "description": "A mental health application catered towards people who struggle with accountability and people who just want to hear a second opinion from a guide/therapist-like AI.",
+      "description": "A mental health application catered towards people who struggle with accountability and people who want to talk to a guide/therapist-like AI.",
       "code": "https://github.com/sord-dev/mental-health-server",
       "websiteUrl": "https://serenity-ai.netlify.app/authenticate/register"
     },
