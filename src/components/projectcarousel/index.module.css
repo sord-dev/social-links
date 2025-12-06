@@ -24,7 +24,7 @@
 }
 .card p {
   font-size: 12px;
-  letter-spacing: 130%;
+  letter-spacing: 0.02em;
 }
 
 .card.left {

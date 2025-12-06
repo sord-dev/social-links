@@ -1,9 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
-    domains: ["placeholder.com", "i.postimg.cc", "i.ibb.co"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placeholder.com",
+      },
+      {
+        protocol: "https", 
+        hostname: "i.postimg.cc",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+    ],
   },
   async redirects() {
     return [

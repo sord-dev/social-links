@@ -1,16 +1,22 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import config from "./particlesjs-config-default.json";
 
 export function ParticleBackground({ children }) {
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
+    // Using loadSlim instead of loadFull for better performance
+    await loadSlim(engine);
   }, []);
 
   return (
     <>
-      <Particles className="background" options={config} init={particlesInit} />
+      <Particles
+        className="background"
+        options={config}
+        init={particlesInit}
+        id="tsparticles"
+      />
       {children}
     </>
   );
